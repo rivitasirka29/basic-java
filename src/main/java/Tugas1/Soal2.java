@@ -8,12 +8,12 @@ public class Soal2 {
         System.out.print("Masukan Bilangan = ");
         angka=input.nextInt();
 
-        //Hasil check ganjil atau genap
-        int hitungGanjil = ~(angka % 2);
-        int hitungGenap = angka % 2;
+        //Hasil check ganjil atau genap, pakai perhitungan faktorisasi atau akar pohon
+        //Sisa bagi hasil ganjil = 1, genap = 0
+        int hitungHasil  = angka % 2;
 
         //true = ganjil dan false = genap
-        boolean trueFalse = hitungGanjil < 0 || hitungGenap > 0;
+        boolean trueFalse = hitungHasil > 0;
 
         if(trueFalse == true){
             System.out.println("angka " + angka + " adalah bilangan Ganjil = " + trueFalse);
