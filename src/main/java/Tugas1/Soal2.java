@@ -1,22 +1,24 @@
 package Tugas1;
+import java.util.Scanner;
 
 public class Soal2 {
     public static void main(String[] args) {
-        int ganjil1 = 1;
-        int genap1  = 2;
-        int ganjil2 = 3;
-        int genap2  = 4;
+        Scanner input=new Scanner(System.in);
+        int angka;
+        System.out.print("Masukan Bilangan = ");
+        angka=input.nextInt();
 
-        boolean even;
-        boolean odd;
+        //Hasil check ganjil atau genap
+        int hitungGanjil = ~(angka % 2);
+        int hitungGenap = angka % 2;
 
-        even = true;
-        odd = false;
+        //true = ganjil dan false = genap
+        boolean trueFalse = hitungGanjil < 0 || hitungGenap > 0;
 
-        //print ganjil genap
-        System.out.println("angka " + ganjil1 + " adalah bilangan ganjil = " + even);
-        System.out.println("angka " + genap1 + " adalah bilangan genap = " + odd);
-        System.out.println("angka " + ganjil2 + " adalah bilangan ganjil = " + even);
-        System.out.println("angka " + genap2 + " adalah bilangan genap = " + odd);
+        if(trueFalse == true){
+            System.out.println("angka " + angka + " adalah bilangan Ganjil = " + trueFalse);
+        }else{
+            System.out.println("angka " + angka + " adalah bilangan Genap = " + trueFalse);
+        }
     }
 }

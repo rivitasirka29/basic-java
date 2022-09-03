@@ -5,14 +5,11 @@ public class Soal4 {
         int angka1 = 10;
         int angka2 = 20;
 
-        //variable int ke float
-        float angka3 = angka1;
-        float angka4 = angka2;
-
         //pembagian
-        float angka5 = angka3 / angka4;
+        int angka3 = angka1 / angka2;
 
-        //output = 0,5
-        System.out.println(angka5);
+        //casting
+        float angka4 = (float) angka3;
+        System.out.println(angka4);
     }
 }
