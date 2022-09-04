@@ -6,12 +6,8 @@ public class Soal4 {
         int angka2 = 20;
 
         //casting
-        float hasil = (float) angka1;
-        float hasil2 = (float) angka2;
+        float hasil = angka1 / (float) angka2;
 
-        //pembagian
-        float hasilAkhir = hasil/hasil2;
-
-        System.out.println(hasilAkhir);
+        System.out.println(hasil);
     }
 }
