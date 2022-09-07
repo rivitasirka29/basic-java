@@ -9,5 +9,8 @@ public class Soal4 {
         float hasil = angka1 / (float) angka2;
 
         System.out.println(hasil);
+
+        //solusi lain
+        //float hasil = (float) angka1 / (float) angka2;
     }
 }
