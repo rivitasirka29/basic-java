@@ -1,4 +1,4 @@
-package Tugas1;
+package tugas1;
 import java.util.Scanner;
 
 public class Soal2 {

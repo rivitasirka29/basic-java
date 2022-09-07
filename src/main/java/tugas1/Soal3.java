@@ -1,4 +1,4 @@
-package Tugas1;
+package tugas1;
 
 public class Soal3 {
     public static void main(String[] args) {
