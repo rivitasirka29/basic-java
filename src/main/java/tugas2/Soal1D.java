@@ -2,25 +2,27 @@ package tugas2;
 
 public class Soal1D {
     public static void main(String[] args) {
-        int n, numberOfStars;
-        for (n = 5; n < 14; n++) {
-                switch (n){
-                    case 5,13 :
-                        System.out.println("S");
+        // baris x kolom = 9 x 5
+
+        for (int b = 0; b <= 9; b++) {
+            for (int k = 0; k <= 5; k++){
+                if(b == 1 && k == 1 || b == 9 && k ==1){
+                    System.out.println("S");
                     break;
-                    case 6,12 :
-                        System.out.println("S" + "I");
+                } else if (b == 2 && k >= 1 && k <= 2 || b == 8 && k >= 1 && k <= 2) {
+                    System.out.println("S"+"I");
                     break;
-                    case 7,11 :
-                        System.out.println("S" + "I" + "R");
+                } else if (b == 3 && k >= 1 && k <= 3 || b == 7 && k >= 1 && k <= 3) {
+                    System.out.println("S"+"I"+"R");
                     break;
-                    case 8,10 :
-                        System.out.println("S" + "I" + "R" + "K");
+                } else if (b == 4 && k >= 1 && k <= 4 || b == 6 && k >= 1 && k <= 4) {
+                    System.out.println("S"+"I"+"R"+"K");
                     break;
-                    case 9 :
-                        System.out.println("S" + "I" + "R" + "K" + "A");
+                } else if (b == 5 && k >= 1 && k <= 5) {
+                    System.out.println("S"+"I"+"R"+"K"+"A");
                     break;
                 }
+            }
         }
     }
 }
