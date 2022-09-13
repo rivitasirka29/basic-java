@@ -2,14 +2,12 @@ package tugas2;
 
 public class Soal1A {
     public static void main(String[] args) {
-        int n;
-        for (n = 5; n < 10; n++) {
-            System.out.println("*****");
+        int n = 5;
+        for(int i = 0; i < n; i++) {
+            for(int j = 1; j <= n; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
-        // 5 < 10 ? *****
-        // 6 < 10 ? *****
-        // 7 < 10 ? *****
-        // 8 < 10 ? *****
-        // 9 < 10 ? *****
     }
 }

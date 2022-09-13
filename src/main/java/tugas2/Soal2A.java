@@ -4,27 +4,22 @@ import java.util.Scanner;
 
 public class Soal2A {
     public static void main(String[] args) {
-        int satuan = 1;
-        int puluhan = 10;
-        int ratusan = 100;
-        int ribuan = 1000;
-        int puluhRibuan = 10000;
+        int n = 10000;
 
-        int bilangan = -100;
-
-        if (bilangan == satuan) {
-            System.out.println("SATUAN");
-        } else if (bilangan == puluhan) {
-            System.out.println("PULUHAN");
-        } else if (bilangan == ratusan) {
-            System.out.println("RATUSAN");
-        } else if (bilangan == ribuan) {
-            System.out.println("RIBUAN");
-        } else if (bilangan == puluhRibuan) {
-            System.out.println("PULUH RIBUAN");
-        } else {
-            System.out.println("INPUT TIDAK VALID");
-        }
+        if(n < 0)
+            System.out.println("tidak valid");
+        else if ( n < 10)
+            System.out.println("satuan");
+        else if (n < 100)
+            System.out.println("puluhan");
+        else if (n < 1000)
+            System.out.println("ratusan");
+        else if (n < 10000)
+            System.out.println("ribuan");
+        else if (n < 100000)
+            System.out.println("puluh ribuan");
+        else
+            System.out.println("tidak valid");
     }
 }
 
